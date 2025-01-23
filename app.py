@@ -3,6 +3,7 @@ from datetime import datetime
 
 def obter_resposta(texto: str) -> str:
     comando: str = texto.lower()
+
     if comando in ('olá', 'boa tarde', 'bom dia'):
         return 'Olá tudo bem!'
     if comando == 'como estás':
