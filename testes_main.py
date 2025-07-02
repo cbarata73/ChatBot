@@ -14,28 +14,22 @@ class TestObterResposta(unittest.TestCase):
         """Teste de respostas a perguntas simples"""
         self.assertEqual(obter_resposta("como estás"), "Estou bem, obrigado!")
         self.assertEqual(obter_resposta("capital de portugal"), "Lisboa")
-        self.assertEqual(obter_resposta("como te chamas"),
-                         "O meu nome é: Bot :)")
+        self.assertEqual(obter_resposta("como te chamas"), "O meu nome é: Bot :)")
         self.assertEqual(obter_resposta("tempo"), "Está um dia de sol!")
 
     def teste_despedidas(self):
         """Teste de respostas a despedidas"""
-        self.assertEqual(obter_resposta("bye"),
-                         "Gostei de falar contigo! Até breve...")
-        self.assertEqual(obter_resposta("adeus"),
-                         "Gostei de falar contigo! Até breve...")
-        self.assertEqual(obter_resposta("tchau"),
-                         "Gostei de falar contigo! Até breve...")
+        self.assertEqual(obter_resposta("bye"), "Gostei de falar contigo! Até breve...")
+        self.assertEqual(obter_resposta("adeus"), "Gostei de falar contigo! Até breve...")
+        self.assertEqual(obter_resposta("tchau"), "Gostei de falar contigo! Até breve...")
 
     def teste_horas_e_data(self):
         """Teste de respostas a perguntas sobre horas e data"""
         hora_atual = datetime.now().strftime("%H:%M")
         data_atual = datetime.now().strftime("%d-%m-%Y")
 
-        self.assertEqual(obter_resposta("que horas são"),
-                         f"São: {hora_atual} horas")
-        self.assertEqual(obter_resposta("qual é a data"),
-                         f"Hoje é dia: {data_atual}")
+        self.assertEqual(obter_resposta("que horas são"), f"São: {hora_atual} horas")
+        self.assertEqual(obter_resposta("qual é a data"), f"Hoje é dia: {data_atual}")
 
     def teste_resposta_padrao(self):
         """Teste de resposta padrão"""
