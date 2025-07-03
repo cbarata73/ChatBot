@@ -39,8 +39,8 @@ def obter_resposta(texto: str) -> str:
         'ia': 'A inteligência artificial é um campo da ciência da computação que se concentra na criação de sistemas que podem realizar tarefas que normalmente requerem inteligência humana.',
         'machine learning': 'O aprendizado de máquina é um subcampo da inteligência artificial que se concentra no desenvolvimento de algoritmos que permitem que os computadores aprendam com os dados.',
         'deep learning': 'O aprendizado profundo é uma subárea do aprendizado de máquina que utiliza redes neurais profundas para modelar dados complexos.',
-        'saúde': 'A saúde é um estado de completo bem-estar físico, mental e social, e não apenas a ausência de doenças ou enfermidades.',
         'problemas saúde': 'Problemas de saúde podem variar de leves a graves e podem afetar qualquer parte do corpo.',
+        'saúde': 'A saúde é um estado de completo bem-estar físico, mental e social, e não apenas a ausência de doenças ou enfermidades.',
         ('indisposição', 'sintomas de indisposição', 'estou com sintomas de indisposição'): 'Sintomas de indisposição podem incluir fadiga, dor de cabeça, náusea e outros sinais de que algo não está bem.',
         'sintomas': 'Sintomas são sinais ou indicações de uma condição médica ou doença.',
         }
