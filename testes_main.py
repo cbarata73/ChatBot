@@ -26,11 +26,11 @@ class TestObterResposta(unittest.TestCase):
     def teste_historia_portugal(self):
         """Teste de respostas sobre história de Portugal"""
         self.assertEqual(obter_resposta("historia de portugal"), "Portugal tem uma rica história...")
-    
+
     def teste_cozinhar(self):
         """Teste de respostas sobre cozinhar"""
         self.assertEqual(obter_resposta("cozinhar"), "Cozinhar é uma arte que envolve a preparação de alimentos...")
-    
+
     def teste_programar(self):
         """Teste de respostas sobre programar"""
         self.assertEqual(obter_resposta("programar"), "Programar é o processo de escrever código para criar software...")
@@ -53,6 +53,7 @@ class TestObterResposta(unittest.TestCase):
         """Teste de respostas sobre saúde"""
         self.assertEqual(obter_resposta("saúde"), "A saúde é um estado de completo bem-estar físico, mental e social, e não apenas a ausência de doenças ou enfermidades.")
         self.assertEqual(obter_resposta("problemas saúde"), "Problemas de saúde podem variar de leves a graves e podem afetar qualquer parte do corpo.")
+        self.assertEqual(obter_resposta("sintomas"), "Sintomas são sinais ou indicações de uma condição médica ou doença.")
 
     def teste_indisposicao(self):
         """Teste de respostas sobre indisposição"""
